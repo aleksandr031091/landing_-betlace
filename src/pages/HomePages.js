@@ -1,13 +1,15 @@
 import AbautInnovate from "../components/abautInovate/AbautInnovate";
+import Form from "../components/form/Form";
 import Hero from "../components/hero/Hero";
-import Slider from "../components/slider/Slider";
+import MainSlider from "../components/slider/MainSlider";
 
 const HomePages = () => {
   return (
     <>
       <Hero />
       <AbautInnovate />
-      <Slider />
+      <MainSlider />
+      <Form />
     </>
   );
 };
