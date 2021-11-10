@@ -6,7 +6,8 @@ const ModalStyled = styled.div`
   padding: 58px 0 0 16px;
   width: 100%;
   height: 100%;
-  background-color: #cacae4;
+  background-color: ${({ colors }) => colors.background};
+
   z-index: 1;
 `;
 

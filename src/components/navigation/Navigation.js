@@ -1,19 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import NavigationStyled from "./NavigationStyled";
+import colors from "../../styles/colors";
 
 const Navigation = ({ routes }) => {
   return (
-    <NavigationStyled>
+    <NavigationStyled colors={colors}>
       <ul className="navList">
         {routes.map((route) => (
-          <li key={route.path}>
+          <li className="navListItem" key={route.path}>
             <NavLink
               className="navLink"
               activeClassName="activeNavLink"
               to={route.path}
               exact={route.exact}
-              //   component={route.component}
             >
               {route.name}
             </NavLink>

@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 const initialState = {
   width: window.innerWidth,
   breakPointNavigation: 1920,
-  breakPointUserMenu: 375,
+  breakPointUserMenu: 480,
   isModalOpen: false,
 };
 

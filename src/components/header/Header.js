@@ -1,10 +1,12 @@
 import Logo from "./logo/Logo";
-import sprite from "../../images/sprite.svg";
-import HeaderStyled from "./HeaderStyled";
-import useModal from "../../hooks/useModal";
 import Modal from "../modal/Modal";
 import Navigation from "../navigation/Navigation";
 import { headerRoutes } from "../../routes/headerRoutes";
+
+import HeaderStyled from "./HeaderStyled";
+import sprite from "../../images/sprite.svg";
+
+import useModal from "../../hooks/useModal";
 
 const Header = () => {
   const [stateModal, setOpenModal] = useModal();
