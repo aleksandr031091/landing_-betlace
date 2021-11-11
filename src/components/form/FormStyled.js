@@ -41,6 +41,10 @@ const FormStyled = styled.form`
     position: relative;
     margin-bottom: 40px;
     border-bottom: 1px solid ${({ colors }) => colors.secondAccentColor};
+
+    & :focus {
+      box-shadow: 0px 4px 10px rgba(55, 123, 169, 0.3);
+    }
   }
   .inputIcon {
     position: absolute;
@@ -51,8 +55,8 @@ const FormStyled = styled.form`
   .formInput {
     padding: 0 0 8px 29px;
     width: 310px;
-
     border: none;
+    outline: none;
   }
   .formInput::placeholder {
     font-family: Poppins;
@@ -73,6 +77,12 @@ const FormStyled = styled.form`
     border: none;
     border-radius: 10px;
     text-transform: uppercase;
+    outline: none;
+    &:hover,
+    :focus {
+      transform: scale(1.01);
+      transition: 200ms;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -119,6 +129,9 @@ const FormStyled = styled.form`
     .formInput::placeholder {
       font-size: 16px;
       line-height: 1.18;
+    }
+    .descFormInput {
+      width: 1140px;
     }
 
     .btnSubmit {

@@ -57,7 +57,7 @@ const Form = () => {
             type="tel"
             name="tel"
             pattern="\d{3}\d{3}\d{2}\d{2}"
-            maxlength="18"
+            maxLength="18"
             placeholder="phone"
             required
           />
@@ -66,7 +66,11 @@ const Form = () => {
           <svg className="inputIcon" width="5" height="10">
             <use href={sprite + "#icon-input-message"}></use>
           </svg>
-          <input className="formInput" type="text" placeholder="message" />
+          <input
+            className="formInput descFormInput"
+            type="text"
+            placeholder="message"
+          />
         </label>
       </div>
 

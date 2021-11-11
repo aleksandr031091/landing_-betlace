@@ -17,34 +17,34 @@ const Footer = () => {
       </div>
 
       <div className="adDressBox">
-        <p>
-          <p className="address">
-            <svg className="locationIcon">
-              <use href={sprite + "#icon-location"} />
-            </svg>
-            18 Sin Ming Lane, #08-37, Midview City, Singapore 573960
-          </p>
+        <p className="address">
+          <svg className="locationIcon">
+            <use href={sprite + "#icon-location"} />
+          </svg>
+          18 Sin Ming Lane, #08-37, Midview City, Singapore 573960
         </p>
         <p>
           <svg className="letterIcon">
             <use href={sprite + "#icon-letter"} />
           </svg>
-          <Link className="mailAdres">contact@s3innovate.com</Link>
+          <Link to="#" className="mailAdres">
+            contact@s3innovate.com
+          </Link>
         </p>
       </div>
 
       <div className="socialBox">
-        <Link className="socialLink">
+        <Link to="#" className="socialLink">
           <svg className="socialIcon">
             <use href={sprite + "#icon-twitter"} />
           </svg>
         </Link>
-        <Link className="socialLink">
+        <Link to="#" className="socialLink">
           <svg className="socialIcon">
             <use href={sprite + "#icon-facebook"} />
           </svg>
         </Link>
-        <Link className="socialLink">
+        <Link to="#" className="socialLink">
           <svg className="socialIcon">
             <use href={sprite + "#icon-link"} />
           </svg>
