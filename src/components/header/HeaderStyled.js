@@ -21,7 +21,7 @@ const HeaderStyled = styled.header`
     height: 20px;
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1280px) {
     padding: 0 50px 0 50px;
     height: 105px;
   }

@@ -135,7 +135,7 @@ const SliderStyled = styled.div`
     color: ${({ colors }) => colors.primaryTextColor};
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1280px) {
     .logoWrapper {
       top: -165px;
       width: 230px;

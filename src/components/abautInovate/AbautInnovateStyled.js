@@ -83,7 +83,7 @@ const AbautInnovateStyled = styled.div`
     color: ${({ colors }) => colors.primaryTextColor};
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1280px) {
     padding: 130px 16px 160px 16px;
     .bGTitle {
       font-size: 93px;

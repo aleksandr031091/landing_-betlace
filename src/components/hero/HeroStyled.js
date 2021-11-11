@@ -24,7 +24,7 @@ const HeroStyled = styled.div`
     height: 45px;
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1280px) {
     padding: 440px 0 340px 0;
     background-image: url(${bgdesktop});
 

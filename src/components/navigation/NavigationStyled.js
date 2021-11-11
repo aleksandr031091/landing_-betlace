@@ -19,7 +19,7 @@ const NavigationStyled = styled.nav`
     margin-bottom: 54px;
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1280px) {
     .navList {
       display: flex;
       text-align: center;

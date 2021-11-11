@@ -75,7 +75,7 @@ const FormStyled = styled.form`
     text-transform: uppercase;
   }
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1280px) {
     .bGTitle {
       margin-bottom: 88px;
       font-size: 93px;

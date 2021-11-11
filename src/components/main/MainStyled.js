@@ -1,7 +1,9 @@
 import styled from "styled-components";
 const MainStyled = styled.main`
-  /* width: 100%; */
-  /* height: calc(100vw - 56px); */
+  min-height: calc(100vh - 470px);
+  @media screen and (min-width: 1280px) {
+    min-height: calc(100vh - 615px);
+  }
 `;
 
 export default MainStyled;
