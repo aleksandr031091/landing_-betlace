@@ -1,4 +1,3 @@
-import Logo from "./logo/Logo";
 import Modal from "../modal/Modal";
 import Navigation from "../navigation/Navigation";
 import { headerRoutes } from "../../routes/headerRoutes";
@@ -7,6 +6,8 @@ import HeaderStyled from "./HeaderStyled";
 import sprite from "../../images/sprite.svg";
 
 import useModal from "../../hooks/useModal";
+
+import logoImg from "../../images/logo-second.png";
 
 const Header = () => {
   const [stateModal, setOpenModal] = useModal();
@@ -26,7 +27,7 @@ const Header = () => {
   return (
     <>
       <HeaderStyled isOpenModal={stateModal.isModalOpen}>
-        <Logo />
+        <img className="logo" src={logoImg} alt="logo" />
 
         {stateModal.width <= stateModal.breakPointUserMenu ? (
           showBtn()

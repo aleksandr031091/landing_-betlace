@@ -11,6 +11,10 @@ const HeaderStyled = styled.header`
 
   z-index: 2;
 
+  .logo {
+    width: 107px;
+    height: 32px;
+  }
   .burgerMenu {
     width: 24px;
     height: 24px;
@@ -24,6 +28,11 @@ const HeaderStyled = styled.header`
   @media screen and (min-width: 1280px) {
     padding: 0 50px 0 50px;
     height: 105px;
+
+    .logo {
+      width: 179px;
+      height: 53px;
+    }
   }
 `;
 
