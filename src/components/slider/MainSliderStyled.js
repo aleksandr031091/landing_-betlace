@@ -5,7 +5,7 @@ const SliderStyled = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 8px 0 80px 0;
-  background-color: #fbfbfb;
+  background-color: ${({ colors }) => colors.secondTittleColor};
 
   .logoWrapper {
     position: relative;
@@ -15,7 +15,7 @@ const SliderStyled = styled.div`
     justify-content: center;
     width: 72px;
     height: 72px;
-    background-color: #fff;
+    background-color: ${({ colors }) => colors.background};
     border-radius: 50%;
   }
   .logoSlider {
@@ -35,7 +35,7 @@ const SliderStyled = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #5dade2;
+    background-color: ${({ colors }) => colors.accent};
     overflow: hidden;
   }
 
@@ -49,7 +49,7 @@ const SliderStyled = styled.div`
     padding: 0;
   }
   .slick-active {
-    background-color: #fff;
+    background-color: ${({ colors }) => colors.background};
     margin-right: 6px;
     border-radius: 5px;
   }
@@ -58,8 +58,8 @@ const SliderStyled = styled.div`
     width: 100%;
     padding: 30px 21px 30px 21px;
     margin: 0 16px 0 16px;
-    background-color: #fff;
-    box-shadow: 0px 0px 20px #438bbb;
+    background-color: ${({ colors }) => colors.background};
+    box-shadow: 0px 0px 20px ${({ colors }) => colors.liderShadowColor};
     border-radius: 10px;
   }
 
@@ -67,7 +67,7 @@ const SliderStyled = styled.div`
     margin-right: 6px;
     width: 18px;
     height: 7px;
-    border: 1px #ffffff solid;
+    border: 1px ${({ colors }) => colors.background} solid;
     border-radius: 5px;
   }
   .wrapperDots {
@@ -105,7 +105,7 @@ const SliderStyled = styled.div`
     font-weight: 700;
     font-size: 16px;
     line-height: 2;
-    color: #2874a6;
+    color: ${({ colors }) => colors.secondAccentColor};
 
     text-transform: uppercase;
   }
@@ -114,14 +114,15 @@ const SliderStyled = styled.div`
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #202020;
+    color: ${({ colors }) => colors.primaryTextColor};
   }
+
   .decoration {
     margin: 0 auto;
     margin-bottom: 15px;
     height: 2px;
     width: 195px;
-    background-color: #2874a6;
+    background-color: ${({ colors }) => colors.secondAccentColor};
   }
   .sliderDescription {
     font-style: italic;
@@ -129,7 +130,7 @@ const SliderStyled = styled.div`
     font-size: 14px;
     line-height: 1.57;
 
-    color: #202020;
+    color: ${({ colors }) => colors.primaryTextColor};
   }
 
   @media screen and (min-width: 1920px) {

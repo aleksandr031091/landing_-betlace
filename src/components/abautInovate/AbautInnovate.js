@@ -9,7 +9,7 @@ const AbautInnovate = () => {
 
   return (
     <AbautInnovateStyled colors={colors}>
-      <h2 className="bGTittle">About S3 Innovate</h2>
+      <h2 className="bGTitle">About S3 Innovate</h2>
       <h3 className="innovatetitle">About S3 Innovate</h3>
 
       {stateModal.width <= stateModal.breakPointUserMenu ? (

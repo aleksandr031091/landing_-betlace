@@ -6,7 +6,7 @@ const AbautInnovateStyled = styled.div`
   flex-direction: column;
   padding: 50px 16px 57px 16px;
 
-  .bGTittle {
+  .bGTitle {
     margin-bottom: 25px;
     font-weight: bold;
     font-size: 27px;
@@ -85,7 +85,7 @@ const AbautInnovateStyled = styled.div`
 
   @media screen and (min-width: 1920px) {
     padding: 130px 16px 160px 16px;
-    .bGTittle {
+    .bGTitle {
       font-size: 93px;
       line-height: 0.96;
     }

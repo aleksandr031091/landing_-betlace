@@ -1,7 +1,7 @@
 import sliderData from "../../slider.json";
 import Slider from "react-slick";
 import { nanoid } from "nanoid";
-
+import colors from "../../styles/colors";
 import MainSliderStyled from "./MainSliderStyled";
 import sprite from "../../images/sprite.svg";
 import bgImage from "../../images/slider-bg-image.png";
@@ -46,7 +46,7 @@ const MainSlider = () => {
   };
 
   return (
-    <MainSliderStyled>
+    <MainSliderStyled colors={colors}>
       <div className="logoWrapper">
         <svg className="logoSlider">
           <use href={sprite + "#icon-Logo-second"} />
