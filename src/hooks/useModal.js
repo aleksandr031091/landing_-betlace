@@ -20,6 +20,11 @@ const useModal = () => {
     };
   }, [location]);
 
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.style.overflow = stateModal.isModalOpen ? "hidden" : "auto";
+  }, [stateModal.isModalOpen]);
+
   const closeModalOnLocation = () =>
     setOptionModal((prev) => ({ ...prev, isModalOpen: false }));
 
