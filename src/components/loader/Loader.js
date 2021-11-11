@@ -1,15 +1,10 @@
 import Loader from "react-loader-spinner";
+import LoaderStyled from "./LoaderStyled";
 
 export const MainLoader = () => {
   return (
-    <div>
-      <Loader
-        type="Grid"
-        color="#00BFFF"
-        height={100}
-        width={100}
-        timeout={3000}
-      />
-    </div>
+    <LoaderStyled>
+      <Loader type="Grid" color="#5DADE2" height={100} width={100} />
+    </LoaderStyled>
   );
 };
