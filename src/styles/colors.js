@@ -6,6 +6,8 @@ const colors = {
   secondaryBgColor: "#FBFBFB",
   secondTittleColor: "#F4F9FC",
   liderShadowColor: "#438bbb",
+  bgTitleFormColor: "#ecf2f7",
+  placeholderFormColor: "#97a8b3",
 };
 
 export default colors;

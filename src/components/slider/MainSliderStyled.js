@@ -9,7 +9,7 @@ const SliderStyled = styled.div`
 
   .logoWrapper {
     position: relative;
-    top: -45px;
+    top: -55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +19,8 @@ const SliderStyled = styled.div`
     border-radius: 50%;
   }
   .logoSlider {
+    position: absolute;
+    bottom: 15px;
     width: 24px;
     height: 27px;
   }
@@ -126,7 +128,7 @@ const SliderStyled = styled.div`
   }
   .sliderDescription {
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.57;
 
@@ -135,11 +137,12 @@ const SliderStyled = styled.div`
 
   @media screen and (min-width: 1920px) {
     .logoWrapper {
-      top: -115px;
+      top: -165px;
       width: 230px;
       height: 237px;
     }
     .logoSlider {
+      bottom: 53px;
       width: 61px;
       height: 61px;
     }

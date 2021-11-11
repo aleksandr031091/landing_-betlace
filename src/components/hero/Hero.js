@@ -1,12 +1,7 @@
 import HeroStyled from "./HeroStyled";
 import sprite from "../../images/sprite.svg";
-// import bgMobile from "../../images/hero-mob.png";
-// import bgdesktop from "../../images/hero-desc.jpg";
-// import useModal from "../../hooks/useModal";
 
 const Hero = () => {
-  //   const [stateModal] = useModal();
-
   return (
     <HeroStyled>
       <svg className="logo">
@@ -14,7 +9,7 @@ const Hero = () => {
       </svg>
 
       <svg className="title">
-        <use href={sprite + "#icon-hero-l"} />
+        <use href={sprite + "#icon-hero-title"} />
       </svg>
     </HeroStyled>
   );
