@@ -1,6 +1,7 @@
 import sliderData from "../../slider.json";
 import Slider from "react-slick";
 import { nanoid } from "nanoid";
+
 import MainSliderStyled from "./MainSliderStyled";
 import sprite from "../../images/sprite.svg";
 import bgImage from "../../images/slider-bg-image.png";
@@ -28,17 +29,6 @@ const MainSlider = () => {
     );
   }
 
-  // function costimDots(dots) {
-
-  //   return <ul>
-
-  //     <li>
-  //       <div>{dots}</div>
-  //     </li>
-  //   </ul>
-
-  // }
-
   const settings = {
     dots: true,
     infinite: true,
@@ -47,34 +37,10 @@ const MainSlider = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    customPaging: (i) => (
-      <div
-        style={{
-          marginRight: "6px",
-          width: "18px",
-          height: "7px",
-          border: "1px #ffffff solid",
-          borderRadius: "5px",
-        }}
-      ></div>
-    ),
+    customPaging: () => <div className="paging"></div>,
     appendDots: (dots) => (
-      <div
-        style={{
-          borderRadius: "10px",
-          padding: "10px",
-        }}
-      >
-        <ul
-          style={{
-            margin: "28px -6px 39px 0",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {dots}
-        </ul>
+      <div className="wrapperDots">
+        <ul className="listDots">{dots}</ul>
       </div>
     ),
   };
@@ -93,7 +59,9 @@ const MainSlider = () => {
           {sliderData.map((e) => (
             <div className="sliderContainer" key={nanoid()}>
               <h4 className="sliderFirstTitle">{e.mainTitle}</h4>
-              <h5 className="sliderSecTittle">{e.title}</h5>
+              <div className="wrapperTittleDesc">
+                <h5 className="sliderSecTittle">{e.title}</h5>
+              </div>
               <div className="decoration"></div>
               <p className="sliderDescription">{e.description}</p>
             </div>
