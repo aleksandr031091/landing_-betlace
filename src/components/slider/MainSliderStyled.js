@@ -194,11 +194,11 @@ const SliderStyled = styled.div`
     }
 
     .btnArrow {
-      bottom: 34px;
+      bottom: 33px;
       right: 435px;
     }
     .btnPrev {
-      bottom: 34px;
+      bottom: 33px;
       left: 435px;
     }
 
