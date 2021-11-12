@@ -86,7 +86,7 @@ const AbautInnovateStyled = styled.div`
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 130px 375px 160px 375px;
+    padding: 130px 21px 160px 21px;
     .bGTitle {
       font-size: 93px;
       line-height: 0.96;
@@ -106,6 +106,7 @@ const AbautInnovateStyled = styled.div`
 
     .boxDescription {
       margin-bottom: 65px;
+      padding: 0 360px 0 360px;
     }
 
     .Description {
