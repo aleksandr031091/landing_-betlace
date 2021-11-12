@@ -37,9 +37,11 @@ const AbautInnovateStyled = styled.div`
 
     color: ${({ colors }) => colors.primaryTextColor};
   }
-
-  .Description {
+  .boxDescription {
     margin-bottom: 30px;
+    padding: 0 13px 0 13px;
+  }
+  .Description {
     text-align: center;
     font-size: 14px;
     line-height: 1.64;
@@ -84,7 +86,7 @@ const AbautInnovateStyled = styled.div`
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 130px 16px 160px 16px;
+    padding: 130px 375px 160px 375px;
     .bGTitle {
       font-size: 93px;
       line-height: 0.96;
@@ -100,6 +102,10 @@ const AbautInnovateStyled = styled.div`
     .innovateDescTitle {
       font-size: 18px;
       line-height: 1.66;
+    }
+
+    .boxDescription {
+      margin-bottom: 65px;
     }
 
     .Description {
